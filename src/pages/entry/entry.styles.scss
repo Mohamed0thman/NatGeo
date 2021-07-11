@@ -1,0 +1,45 @@
+.entry-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+    &--up {
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &--down {
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__text {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.8px;
+    text-align: center;
+
+    & > span {
+      color: gold;
+    }
+    @media (max-width: 425px) {
+      width: 80%;
+      font-size: 2rem;
+    }
+  }
+}

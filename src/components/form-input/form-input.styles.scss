@@ -1,0 +1,53 @@
+.group {
+  position: relative;
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .form-input {
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-family: "Geograph";
+    text-align: center;
+
+    &:focus {
+      outline: none;
+
+      &::placeholder {
+        visibility: hidden;
+      }
+    }
+
+    &::placeholder {
+      color: white;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+    }
+
+    &.is-code-input {
+      color: white;
+      font-size: 2rem;
+      height: 50px;
+      background: none;
+      border: none;
+      text-align: center;
+      border-bottom: 1px solid white;
+      outline: none;
+
+      @media (min-height: 750.98px) {
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

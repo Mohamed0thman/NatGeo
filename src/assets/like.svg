@@ -1,0 +1,11 @@
+<svg id="Component_59_1" data-name="Component 59 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.959" height="65.945" viewBox="0 0 65.959 65.945">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_4" data-name="Clip 4" d="M0,0H49.473V65.945H0Z" transform="translate(0.487 0.055)"/>
+    </clipPath>
+  </defs>
+  <path id="Fill_1" data-name="Fill 1" d="M8.241,0H0V41.215H8.241a4.122,4.122,0,0,0,4.123-4.121V4.13A4.13,4.13,0,0,0,8.241,0" transform="translate(0 24.73)"/>
+  <g id="Group_5" data-name="Group 5" transform="translate(16 -0.055)" clip-path="url(#clip-path)">
+    <path id="Fill_3" data-name="Fill 3" d="M49.441,32.977,45.322,61.824c-.451,2.7-1.845,4.121-4.122,4.121H16.477c-4.121,0-8.241-4.121-12.362-4.121H0V32.981c0-4.121,4.121-5.858,4.121-5.858A20.59,20.59,0,0,0,16.486,8.258V4.137A4.126,4.126,0,0,1,20.6,0h4.119A4.14,4.14,0,0,1,28.85,4.137V28.852H45.322c2.277,0,4.441,1.743,4.119,4.125" transform="translate(0.487 0.055)"/>
+  </g>
+</svg>

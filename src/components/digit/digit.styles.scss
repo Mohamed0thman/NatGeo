@@ -1,0 +1,7 @@
+.digit {
+  display: inline-block;
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

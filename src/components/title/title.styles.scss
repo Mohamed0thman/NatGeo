@@ -1,0 +1,33 @@
+.title {
+  margin-top: 10%;
+  @media (max-width: 991.98px) {
+    padding: 0 5%;
+  }
+  @media (max-width: 425px) {
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__up {
+    width: 100%;
+    position: absolute;
+    top: -60px;
+    @media (max-width: 575.98px) {
+      padding: 0 8%;
+    }
+    @media (max-width: 425px) {
+      top: -20px;
+    }
+    @media (max-width: 375.98px) {
+      top: -15px;
+    }
+  }
+
+  &__down {
+    width: 100%;
+  }
+}

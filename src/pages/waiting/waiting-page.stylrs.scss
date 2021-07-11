@@ -1,0 +1,38 @@
+.waiting-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__container {
+    @media (max-width: 575.98px) {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @media (max-width: 425px) {
+      top: 80px;
+    }
+  }
+  &--text {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    color: #ffd700;
+    @media (max-width: 575.98px) {
+      margin-bottom: 0rem;
+    }
+  }
+
+  &__powered-by {
+    position: absolute;
+    bottom: 3.5rem;
+    right: 6rem;
+  }
+}

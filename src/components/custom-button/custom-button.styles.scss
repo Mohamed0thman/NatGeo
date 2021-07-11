@@ -1,0 +1,40 @@
+.custom-button {
+  width: 150px;
+  height: 40px;
+  font-weight: 700;
+  background: none;
+  color: var(--color-white);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+
+  &.common {
+    border-bottom: 1px solid var(--color-gold);
+  }
+
+  &.sign-in-button {
+    border: 1px solid var(--color-gold);
+    border-radius: 28px;
+    letter-spacing: 2.29px;
+  }
+
+  &.enhance-button {
+    border: 1px solid var(--color-white);
+    border-radius: 28px;
+    text-align: center;
+    letter-spacing: 2.29px;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 30vw;
+    height: 50px;
+    position: absolute;
+    bottom: 1rem;
+    @media (max-width: 575.98px) {
+      display: none;
+    }
+  }
+}

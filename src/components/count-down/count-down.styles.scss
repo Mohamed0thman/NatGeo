@@ -1,0 +1,36 @@
+.count-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.small {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    font-family: "Gotham Book";
+    font-weight: 400;
+    letter-spacing: 0.83px;
+  }
+
+  &.big {
+    font-size: 15rem;
+    font-weight: 100;
+    letter-spacing: 5.2px;
+
+    @media (max-width: 575.98px) {
+      font-size: 13rem;
+      letter-spacing: 4.2px;
+    }
+
+    @media (max-width: 425px) {
+      padding: 0 2rem;
+      font-size: 10rem;
+      letter-spacing: 4px;
+    }
+  }
+
+  &.medium {
+    font-size: 11rem;
+    font-weight: 100;
+    letter-spacing: 4.4px;
+  }
+}

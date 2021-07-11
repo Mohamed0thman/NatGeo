@@ -1,0 +1,38 @@
+.film-live-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: black;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+    height: 80vh;
+    margin-top: 3rem;
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @media (max-width: 991.98px) {
+      object-fit: contain;
+    }
+  }
+
+  &__sound {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    z-index: 50;
+    cursor: pointer;
+    &--icon {
+      width: 31px;
+      height: 31px;
+      fill: gold;
+    }
+  }
+}

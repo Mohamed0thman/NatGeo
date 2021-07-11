@@ -1,0 +1,228 @@
+.chat-app {
+  @media (max-width: 575.98px) {
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__icon {
+    background-color: #fecc05;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 3.5rem;
+    left: 4rem;
+    z-index: 2000;
+    cursor: pointer;
+
+    .icon {
+      position: relative;
+      display: inline-block;
+      top: 11px;
+      left: 11px;
+      cursor: pointer;
+    }
+  }
+
+  &__input-content {
+    width: 396px;
+    height: 40px;
+    position: fixed;
+    bottom: 3.5rem;
+    left: 4rem;
+    z-index: 1900;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    width: 0;
+    transition: 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    @media (max-width: 425px) {
+      width: 380px;
+    }
+    @media (max-width: 375.98px) {
+      width: 340px;
+    }
+
+    &--point-group {
+      margin-top: 1rem;
+      margin-right: 2rem;
+      position: relative;
+
+      span {
+        &,
+        &::before,
+        &::after {
+          width: 5px;
+          height: 5px;
+          background: white;
+          border-radius: 50%;
+          display: inline-block;
+        }
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+        }
+        &::before {
+          left: 1rem;
+        }
+        &::after {
+          right: 1rem;
+        }
+      }
+    }
+  }
+  &__text-input {
+    width: 450px;
+    height: 100%;
+    border-radius: 20px;
+    outline: none;
+    background: none;
+    border: none;
+    color: white;
+
+    width: 340px;
+    padding: 0.8rem 5rem;
+  }
+  @media (max-width: 375.98px) {
+    padding: 0.8rem 6rem;
+    width: 300px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &__background {
+    width: 450px;
+    height: 70vh;
+    max-width: 600px;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(255, 0, 0, 0)
+    );
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+
+    opacity: 0;
+    height: 0;
+
+    transition: 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    @media (max-width: 425px) {
+      width: 100vw;
+    }
+  }
+  &__content {
+    width: 450px;
+    height: 490px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1500;
+    opacity: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.8s 0.2s;
+    @media (max-width: 425px) {
+      width: 100vw;
+    }
+  }
+
+  &__messages-box {
+    width: 450px;
+    height: 60vh;
+    padding-bottom: 5rem;
+    position: fixed;
+    bottom: 100px;
+    left: 4rem;
+    z-index: 1800;
+    padding-bottom: 5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    @media (max-width: 425px) {
+      bottom: 115px;
+      width: 380px;
+    }
+    @media (max-width: 375.98px) {
+      width: 340px;
+    }
+  }
+  &__icons-box {
+    width: 396px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 100px;
+    left: 4rem;
+    z-index: 1800;
+    @media (max-width: 425px) {
+      width: 380px;
+    }
+    @media (max-width: 375.98px) {
+      width: 340px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 40px;
+      font-size: 1.6rem;
+      background-color: rgba(#ffff, $alpha: 0.3);
+      border-radius: 20px;
+      cursor: pointer;
+      @media (max-width: 425px) {
+        font-size: 2rem;
+      }
+      &:not(:last-of-type) {
+        margin-right: 1.5rem;
+      }
+      &:last-of-type {
+        width: 89px;
+      }
+    }
+  }
+
+  &__checkbox:checked ~ &__background {
+    opacity: 1;
+    height: 0;
+    height: 70vh;
+  }
+
+  &__checkbox:checked ~ &__input-content {
+    opacity: 1;
+    width: 0;
+    width: 396px;
+    @media (max-width: 425px) {
+      width: 380px;
+    }
+    @media (max-width: 375.98px) {
+      width: 340px;
+    }
+  }
+  &__checkbox:checked ~ &__content {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__checkbox:checked ~ &__text-input {
+    opacity: 1;
+    visibility: visible;
+  }
+}
